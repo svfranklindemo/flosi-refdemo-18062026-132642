@@ -1,6 +1,8 @@
 /* header and nav layout */
 header .nav-wrapper {
-  background-color: var(--dark-color-opacity);
+  background-color: var(--nav-background-color);
+  border-bottom: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   width: 100%;
   z-index: 2;
   position: fixed;
@@ -90,7 +92,7 @@ header nav .nav-hamburger button {
   border-radius: 0;
   padding: 0;
   background-color: transparent;
-  color: var(--text-light);
+  color: var(--nav-text-color);
   overflow: initial;
   text-overflow: initial;
   white-space: initial;
@@ -299,7 +301,7 @@ header nav .nav-sections ul > li > ul > li {
   header nav .nav-sections .default-content-wrapper > ul > li {
     flex: 0 1 auto;
     position: relative;
-    color: #ffffff;
+    color: var(--nav-text-color);
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul {
@@ -314,7 +316,10 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     top: 150%;
     padding: 16px;
-    background-color: var(--light-color);
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
     white-space: initial;
   }
 
@@ -327,7 +332,7 @@ header nav .nav-sections ul > li > ul > li {
     height: 0;
     border-left: 8px solid transparent;
     border-right: 8px solid transparent;
-    border-bottom: 8px solid var(--light-color);
+    border-bottom: 8px solid #ffffff;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
@@ -470,7 +475,8 @@ header nav .nav-tools .lang-switcher { display: inline-flex; }
     padding: 8% 3%;
     text-align: center;
     z-index: 11111111;
-    background-color: var(--dark-color-opacity);
+    background-color: #ffffff;
+    border-top: 2px solid var(--main-accent-color);
   }
 
   header nav .nav-sections ul {

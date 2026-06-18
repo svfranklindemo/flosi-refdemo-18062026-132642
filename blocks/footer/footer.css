@@ -1,12 +1,10 @@
 footer {
-  background-color: var(--dark-color);
+  background-color: var(--footer-background-color);
+  color: var(--footer-text-color);
   font-size: var(--body-font-size-xs);
   font-family: var(--light-font-family);
-  background-color: var(--dark-color-opacity);
-  background-color: #000;
   width: 100%;
   z-index: 2;
-  color: #ffffff;
 }
 
 footer .footer > div {
@@ -26,7 +24,7 @@ footer .footer img {
 }
 
 footer .footer a {
-  color: #ffffff;
+  color: var(--footer-text-color);
   text-decoration: none;
 }
 
