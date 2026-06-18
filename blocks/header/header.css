@@ -1,11 +1,94 @@
+/* top bar */
+header .top-bar {
+  background-color: var(--main-accent-color);
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 112;
+}
+
+header .top-bar-inner {
+  max-width: 1248px;
+  margin: auto;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 32px;
+}
+
+header .top-bar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  gap: 0;
+}
+
+header .top-bar ul li + li::before {
+  content: '|';
+  color: rgba(255, 255, 255, 0.5);
+  padding: 0 6px;
+  font-size: 10px;
+}
+
+header .top-bar a {
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+header .top-bar a::after {
+  content: none;
+}
+
+header .top-bar a:hover {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+header .top-bar-social a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+header .top-bar-social li::before {
+  display: none;
+}
+
+header .top-bar-social li + li {
+  margin-left: 8px;
+}
+
+header .top-bar-social svg {
+  width: 14px;
+  height: 14px;
+}
+
+@media (width >= 24px) {
+  header .top-bar-inner {
+    padding: 0 32px;
+  }
+}
+
 /* header and nav layout */
 header .nav-wrapper {
   background-color: var(--nav-background-color);
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   width: 100%;
-  z-index: 2;
+  z-index: 111;
   position: fixed;
+  top: 32px;
 }
 
 header nav {
