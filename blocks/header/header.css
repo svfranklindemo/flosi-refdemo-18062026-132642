@@ -28,11 +28,17 @@ header .top-bar ul {
   gap: 0;
 }
 
+header .top-bar ul li {
+  display: flex;
+  align-items: center;
+}
+
 header .top-bar ul li + li::before {
   content: '|';
   color: rgba(255, 255, 255, 0.5);
   padding: 0 6px;
   font-size: 10px;
+  line-height: 1;
 }
 
 header .top-bar a {
