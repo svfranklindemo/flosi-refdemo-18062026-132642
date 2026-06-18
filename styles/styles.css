@@ -9,17 +9,20 @@
  * OF ANY KIND, either express or implied. See the License for the specific language
  * governing permissions and limitations under the License.
  */
-/*
- :root {
-  --brand-theme-color: #ff0000;
-  --brand-dark-color: #131313;
-  --brand-light-color: #dcdcdc;
-  --brand-link-color: #131313;
-  --brand-link-hover-color: #ff0000;
-  --brand-text-color: #131313;
+/* SENAI Brand Tokens */
+:root {
+  --brand-theme-color: #E30613;
+  --brand-dark-color: #1a1a1a;
+  --brand-light-color: #f4f4f4;
+  --brand-link-color: #1a1a1a;
+  --brand-link-hover-color: #C20010;
+  --brand-text-color: #1a1a1a;
   --brand-light-text-color: #ffffff;
+  --brand-nav-background-color: #ffffff;
+  --brand-nav-text-color: #1a1a1a;
+  --brand-footer-background-color: #1a1a1a;
+  --brand-footer-text-color: #ffffff;
 }
-*/
 
 :root {
   /* colors */
@@ -38,17 +41,17 @@
   --light-color-opacity: rgba(255, 255, 255, 0.5);
   --tab-background-color: rgba(0, 0, 0, 0.02);
   /* brand-scoped header/footer variables with sensible defaults */
-  --nav-background-color: var(--brand-nav-background-color, #0000008c);
-  --nav-text-color: var(--brand-nav-text-color, #ffffff);
-  --footer-background-color: var(--brand-footer-background-color, #000);
+  --nav-background-color: var(--brand-nav-background-color, #ffffff);
+  --nav-text-color: var(--brand-nav-text-color, #1a1a1a);
+  --footer-background-color: var(--brand-footer-background-color, #1a1a1a);
   --footer-text-color: var(--brand-footer-text-color, #ffffff);
-  
+
   /* fonts */
-  --body-font-family: 'Adobe Clean', roboto, roboto-fallback, sans-serif;
-  --heading-font-family: 'Adobe Clean Bold', roboto-condensed, roboto-condensed-fallback, sans-serif;
-  --light-font-family: 'Adobe Clean Light', roboto, roboto-fallback, sans-serif;
-  --extra-font-family: 'Adobe Clean Extra Bold', roboto, roboto-fallback, sans-serif;
-  --black-font-family: 'Adobe Clean Black', roboto, roboto-fallback, sans-serif;
+  --body-font-family: 'Open Sans', roboto, roboto-fallback, sans-serif;
+  --heading-font-family: 'Open Sans', roboto-condensed, roboto-condensed-fallback, sans-serif;
+  --light-font-family: 'Open Sans', roboto, roboto-fallback, sans-serif;
+  --extra-font-family: 'Open Sans', roboto, roboto-fallback, sans-serif;
+  --black-font-family: 'Open Sans', roboto, roboto-fallback, sans-serif;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -1105,8 +1108,3 @@ table {
   transform: translateX(0);
 }
 
-/* Accessibility: darken default accent and hover for better contrast */
-:root {
-  --main-accent-color: #C2410C; /* darker orange for contrast */
-  --link-hover-color: #9A3412;  /* darker hover */
-}
