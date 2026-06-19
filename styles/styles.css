@@ -592,6 +592,7 @@ button:not(.secondary):focus::after {
 
 a.button.secondary,
 button.secondary {
+  font-style: normal;
   padding: 12px 24px;
   background-color: transparent;
   color: var(--main-accent-color);
@@ -599,6 +600,7 @@ button.secondary {
   border-radius: 4px;
   font-weight: 600;
   font-size: 18px;
+  font-style: normal;
   line-height: 1.2;
   text-align: center;
   transition: all 0.3s ease;
