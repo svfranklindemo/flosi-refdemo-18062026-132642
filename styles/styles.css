@@ -525,17 +525,13 @@ a::after, a.button::after {
   cursor: pointer;
 }
 a:hover,
-a:focus,
-a.button:hover,
-a.button:focus {
+a:focus {
   color: var(--link-hover-color);
   text-decoration: underline;
   cursor: pointer;
 }
 a:hover::after,
-a:focus::after,
-a.button:hover::after,
-a.button:focus::after {
+a:focus::after {
   color: var(--link-hover-color);
 }
 
@@ -550,11 +546,89 @@ button:disabled:hover::after {
   cursor: unset;
 }
 
+a.button:any-link,
+button:not(.secondary) {
+  padding: 12px 24px;
+  background-color: var(--main-accent-color);
+  color: var(--text-light);
+  border: 2px solid var(--main-accent-color);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+a.button:any-link::after,
+button:not(.secondary)::after {
+  color: var(--text-light);
+  font-size: 20px;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+a.button:hover,
+a.button:focus,
+button:not(.secondary):hover,
+button:not(.secondary):focus {
+  background-color: transparent;
+  color: var(--main-accent-color);
+  border-color: var(--main-accent-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+  text-decoration: none;
+}
+
+a.button:hover::after,
+a.button:focus::after,
+button:not(.secondary):hover::after,
+button:not(.secondary):focus::after {
+  color: var(--main-accent-color);
+  transform: translateX(2px);
+}
+
 a.button.secondary,
 button.secondary {
-  background-color: unset;
-  border: 2px solid currentcolor;
-  color: var(--text-color);
+  padding: 12px 24px;
+  background-color: transparent;
+  color: var(--main-accent-color);
+  border: 2px solid var(--main-accent-color);
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-decoration: none;
+}
+
+a.button.secondary::after,
+button.secondary::after {
+  color: var(--main-accent-color);
+  font-size: 20px;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+a.button.secondary:hover,
+a.button.secondary:focus,
+button.secondary:hover,
+button.secondary:focus {
+  background-color: var(--main-accent-color);
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+a.button.secondary:hover::after,
+a.button.secondary:focus::after,
+button.secondary:hover::after,
+button.secondary:focus::after {
+  color: var(--text-light);
+  transform: translateX(2px);
 }
 
 main img {

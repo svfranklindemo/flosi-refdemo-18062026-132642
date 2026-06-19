@@ -91,6 +91,99 @@
   transform: translateX(2px);
 }
 
+/* Primary = alias for default-button */
+.primary a.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px 5px;
+  background-color: var(--main-accent-color);
+  color: var(--text-light);
+  text-decoration: none;
+  border: 2px solid var(--main-accent-color);
+  border-radius: 4px;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.primary a.button::after {
+  content: "\f105";
+  font-family: 'Font Awesome 5 Solid';
+  color: var(--text-light);
+  font-size: 20px;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+.primary a.button:hover {
+  background-color: transparent;
+  color: var(--main-accent-color);
+  border-color: var(--main-accent-color);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transform: translateY(-1px);
+}
+
+.primary a.button:hover::after {
+  color: var(--main-accent-color);
+  transform: translateX(2px);
+}
+
+.primary a.button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.primary a.button:active::after {
+  transform: translateX(0);
+}
+
+/* Secondary = alias for default-button-secondary */
+.secondary a.button {
+  display: inline-block;
+  padding: 12px 24px;
+  margin: 10px 5px;
+  background-color: transparent;
+  color: var(--main-accent-color);
+  text-decoration: none;
+  border: 2px solid var(--main-accent-color);
+  border-radius: 4px;
+  font-family: var(--heading-font-family);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.secondary a.button::after {
+  content: "\f105";
+  font-family: 'Font Awesome 5 Solid';
+  color: var(--main-accent-color);
+  font-size: 20px;
+  margin-left: 8px;
+  transition: all 0.3s ease;
+}
+
+.secondary a.button:hover {
+  background-color: var(--main-accent-color);
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.secondary a.button:hover::after {
+  color: var(--text-light);
+  transform: translateX(2px);
+}
+
 .default-button-dark a.button {
   display: inline-block;
   padding: 12px 24px;
